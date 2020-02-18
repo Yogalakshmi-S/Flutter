@@ -2,11 +2,15 @@ import 'package:flutter/material.dart';
 void main() {
   runApp(MaterialApp(
     home: Scaffold(
+      backgroundColor: Colors.blueGrey,
       appBar: AppBar(
-        title: Text('my first app'),
+        title: Center(child: Text('my first app')),
+        backgroundColor: Colors.blueGrey[900],
       ),
       body: Center(
-        child: Text('hello divya'),
+        child: Image(
+          image: NetworkImage('https://sample-videos.com/img/Sample-jpg-image-500kb.jpg')
+        ),
       ),
       floatingActionButton: FloatingActionButton(
         child: Text('+'),
